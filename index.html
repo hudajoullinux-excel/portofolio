@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Muh. Nurul Huda</title>
+  <style>
+    /* Reset dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    /* Kolom kiri */
+    .sidebar {
+      background: linear-gradient(180deg, #6a1b9a, #512da8);
+      color: white;
+      padding: 20px;
+    }
+
+    .sidebar img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #ffeb3b;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    .sidebar h2 {
+      background: #ffeb3b;
+      color: black;
+      padding: 8px;
+      margin: 20px 0 10px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      margin: 10px 0;
+      padding-left: 10px;
+      line-height: 1.6;
+    }
+
+    .sidebar p {
+      margin: 5px 0;
+    }
+
+    /* Progress bar kemampuan */
+    .skill {
+      margin: 15px 0;
+    }
+
+    .skill-name {
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    .skill-bar {
+      background: #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      height: 12px;
+    }
+
+    .skill-level {
+      background: #ffeb3b;
+      height: 12px;
+      width: 0; /* Mulai dari 0 */
+      animation: fillBar 2s forwards;
+    }
+
+    /* Animasi progress */
+    @keyframes fillBar {
+      from { width: 0; }
+      to { width: var(--level); }
+    }
+
+    /* Kolom kanan */
+    .content {
+      padding: 20px;
+    }
+
+    header {
+      background: #ffeb3b;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: #000;
+    }
+
+    section {
+      margin: 20px 0;
+    }
+
+    section h2 {
+      background: #6a1b9a;
+      color: white;
+      padding: 8px;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    section ul {
+      list-style: disc;
+      margin-left: 20px;
+      line-height: 1.6;
+    }
+
+    section li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="img/foto.jpg" alt="Foto Profil">
+      
+      <h2>BIODATA</h2>
+      <ul>
+        <li>Pekalongan, 31 Maret 1985</li>
+        <li>Laki-laki</li>
+        <li>Menikah</li>
+        <li>Jl. Sutan Syahrir No.20 Gg.20 Rt:03/03, Pasisir, Pekalongan Barat</li>
+      </ul>
+
+      <h2>KONTAK</h2>
+      <p>Email: hudajoulbr@gmail.com</p>
+      <p>HP: 0823-1344-xxxx</p>
+
+      <!-- Bagian Kemampuan dengan progress bar animasi -->
+      <h2>KEMAMPUAN</h2>
+
+      <div class="skill">
+        <div class="skill-name">Microsoft Office</div>
+        <div class="skill-bar">
+          <div class="skill-level" style="--level: 70%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Design Graphic</div>
+        <div class="skill-bar">
+          <div class="skill-level" style="--level: 60%;"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">IT Network Support</div>
+        <div class="skill-bar">
+          <div class="skill-level" style="--level: 80%;"></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Konten utama -->
+    <div class="content">
+      <header>
+        <h1>M. NURUL HUDA</h1>
+      </header>
+
+      <section class="pendidikan">
+        <h2>PENDIDIKAN</h2>
+        <ul>
+          <li>R.A. Muslimat Pasisari - 1992</li>
+          <li>MSI XVII Pabean - 1998</li>
+          <li>SMPN 8 Pekalongan - 2002</li>
+          <li>SMK Ma’arif NU Tirto/SMART - 2005</li>
+          <li>STMIK-WP Pekalongan - 2009</li>
+        </ul>
+      </section>
+
+      <section class="organisasi">
+        <h2>ORGANISASI</h2>
+        <ul>
+          <li>Wakil Ketua OSIS SMPN 8 Pekalongan (1999)</li>
+          <li>Wakil Ketua OSIS SMK SMART (2003)</li>
+          <li>Wakil Ketua Pradana SMK SMART (2003)</li>
+        </ul>
+      </section>
+
+      <section class="prestasi">
+        <h2>PRESTASI</h2>
+        <ul>
+          <li>Peringkat 2 Cawu-3 Tk.III SMPN 8 (2001)</li>
+          <li>Peringkat 2 Semester-1 SMK SMART (2003)</li>
+          <li>Peringkat 3 Semester-6 SMK SMART (2005)</li>
+        </ul>
+      </section>
+
+      <section class="pengalaman">
+        <h2>PENGALAMAN</h2>
+        <ul>
+          <li>2005 - Karyawan TU di SMK SMART</li>
+          <li>2008 - Teknisi Lab Komputer di SMK SMART</li>
+          <li>2009 - Guru Produktif TKJ di SMK SMART (2009–2021)</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
